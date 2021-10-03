@@ -294,9 +294,13 @@ address { font-size: 1rem; }
     width:100%;
     z-index: 999;
 }
-
+.text-align-right {
+	text-align:right; 
+}
 .footer-link.relative { position: relative; }
-
+.box-margin-top {
+	margin-top : 50px;
+}
 .tm-copyright-text {
     display: inline-block;
     padding: 5px 30px;

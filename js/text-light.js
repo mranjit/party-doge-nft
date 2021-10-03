@@ -53,7 +53,7 @@ winW = window.innerWidth;
 winH = window.innerHeight;
 if (winW > winH) {
   h1px = winH/10;
-  articlePadding = winH/8;
+  articlePadding = winH/10;
 }
 else {
   h1px = winW/5;
