@@ -16,20 +16,20 @@ body {
 	background: radial-gradient(ellipse at center, rgba(43,39,39,1) 0%,rgba(0,0,0,1) 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2727', endColorstr='#000000',GradientType=1 );
 }
-h1, h2, p {
+.stakeTexth1 {
 	margin: 0;
 	padding: 0;
 }
-h1, h2 {
+.stakeTexth1 {
 	font-weight: 400;
 }
-h1 {
+.stakeTexth1 {
     text-transform: uppercase;
     text-align: center;
     z-index: 100;
     position: relative;
 }
-h1 span {
+.stakeTexth1 span {
 	/*display: inline-block;*/
 	cursor: default;
 	z-index: 1000;
@@ -64,17 +64,7 @@ h1 span {
    		text-shadow: 0px 0px 10px rgba(255,255,255,.5);
     }
 }
-h2 {	
-	font-family: 'Fredoka One', cursive;
-    text-align: center;
-    color: rgba(255,255,255,1);
-    text-shadow: 0px 0px 10px rgba(255,255,255,.5);
-    text-transform: uppercase;
-    -webkit-animation: turnOnH2 10s;
-    animation: turnOnH2 10s;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-}
+
 @-webkit-keyframes lightFlicker {
     0% { opacity: 1; }
     50% { opacity: .9; }
@@ -86,7 +76,7 @@ h2 {
     50% { opacity: .9; }
     100% { opacity: 1; }
 }
-h1 .lightFlicker {	
+.stakeTexth1 .lightFlicker {	
     -webkit-animation: lightFlicker .1s;
     animation: lightFlicker .1s;
     -webkit-animation-iteration-count: 30;

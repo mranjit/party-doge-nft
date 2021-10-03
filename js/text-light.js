@@ -20,7 +20,7 @@ title = 'Graphic Designer &bull; Web Developer';
 copy = '<span class="copyright"><a class="icon" href="http://jesperkronholm.se" target="_blank">&copy; Jesper Kronholm 2018</a></span>';
 
 li = '<a class="icon" href="https://www.linkedin.com/in/jesperkronholm/" target="_blank">LinkedIn</a>';
-$('article').html('<h1>'+jk+'</h1>');
+$('article').html('<div class="stakeTexth1">'+jk+'</div>');
 
 R = Math.floor(Math.random() * 255) + 1;
 G = Math.floor(Math.random() * 255) + 1;
@@ -92,23 +92,23 @@ flickrCSS.push('}');
 
 noOfTimes = 1;
 aniLength = 4;
-flickrCSS.push('h1 .flicker {-webkit-animation: turnOnFirst '+aniLength+'s; animation: turnOnFirst '+aniLength+'s; -webkit-animation-iteration-count: '+noOfTimes+'; animation-iteration-count: '+noOfTimes+';}');
-flickrCSS.push('h1 .sec .flicker, h1 .third .flicker {-webkit-animation: turnOnSecond '+aniLength+'s; animation: turnOnSecond '+aniLength+'s; -webkit-animation-iteration-count: '+noOfTimes+'; animation-iteration-count: '+noOfTimes+';}');
+flickrCSS.push('.stakeTexth1 .flicker {-webkit-animation: turnOnFirst '+aniLength+'s; animation: turnOnFirst '+aniLength+'s; -webkit-animation-iteration-count: '+noOfTimes+'; animation-iteration-count: '+noOfTimes+';}');
+flickrCSS.push('.stakeTexth1 .sec .flicker, .stakeTexth1 .third .flicker {-webkit-animation: turnOnSecond '+aniLength+'s; animation: turnOnSecond '+aniLength+'s; -webkit-animation-iteration-count: '+noOfTimes+'; animation-iteration-count: '+noOfTimes+';}');
 flickrCSS = flickrCSS.join('');
 
 CSS = '<style>';
-CSS = CSS+'h1 {font-size:'+h1px+'px; line-height:'+(h1px-5)+'px;}';
-CSS = CSS+'h1 .out {color:'+neonOut+'; text-shadow:0px 0px '+shadowSpill+'px '+neonOutShadow+';}';
-CSS = CSS+'h1 .on, h1 .flicker {color:'+neonColor+'; text-shadow:0px 0px '+lightSpill+'px '+neonShadow+';}';
-CSS = CSS+'h1 .sec .out {color:'+neonOut2+';}';
-CSS = CSS+'h1 .sec .on, h1 .sec .flicker {color:'+neonColor2+'; text-shadow:0px 0px '+lightSpill+'px '+neonShadow2+';}';
-CSS = CSS+'h1 .third .out {color:'+neonOut3+';}';
-CSS = CSS+'h1 .third .on, h1 .third .flicker {color:'+neonColor3+'; text-shadow:0px 0px '+lightSpill+'px '+neonShadow3+';}';
-CSS = CSS+'h1 .first, h1 .sec, h1 .third {display:block;}';
-CSS = CSS+'h1 .sec, h1 .third {font-size:'+(h1px*1.23)+'px;line-height:'+(h1px-5)*1.23+'px;}';
-CSS = CSS+'h1 .third {letter-spacing:'+(h1px/19.28)+'px;margin-left:'+(h1px/19.28)+'px;}';
-CSS = CSS+'h1 .on, h1 .out { transition: all 1s ease-out;}';
-CSS = CSS+'h2 {font-size: '+(h1px/7)+'px; letter-spacing: '+(h1px/21)+'px; margin-left: '+(h1px/21)+'px;}';
+CSS = CSS+'.stakeTexth1 {font-size:'+h1px+'px; line-height:'+(h1px-5)+'px;}';
+CSS = CSS+'.stakeTexth1 .out {color:'+neonOut+'; text-shadow:0px 0px '+shadowSpill+'px '+neonOutShadow+';}';
+CSS = CSS+'.stakeTexth1 .on, .stakeTexth1 .flicker {color:'+neonColor+'; text-shadow:0px 0px '+lightSpill+'px '+neonShadow+';}';
+CSS = CSS+'.stakeTexth1 .sec .out {color:'+neonOut2+';}';
+CSS = CSS+'.stakeTexth1 .sec .on, .stakeTexth1 .sec .flicker {color:'+neonColor2+'; text-shadow:0px 0px '+lightSpill+'px '+neonShadow2+';}';
+CSS = CSS+'.stakeTexth1 .third .out {color:'+neonOut3+';}';
+CSS = CSS+'.stakeTexth1 .third .on, .stakeTexth1 .third .flicker {color:'+neonColor3+'; text-shadow:0px 0px '+lightSpill+'px '+neonShadow3+';}';
+CSS = CSS+'.stakeTexth1 .first, .stakeTexth1 .sec, .stakeTexth1 .third {display:block;}';
+CSS = CSS+'.stakeTexth1 .sec, .stakeTexth1 .third {font-size:'+(h1px*1.23)+'px;line-height:'+(h1px-5)*1.23+'px;}';
+CSS = CSS+'.stakeTexth1 .third {letter-spacing:'+(h1px/19.28)+'px;margin-left:'+(h1px/19.28)+'px;}';
+CSS = CSS+'.stakeTexth1 .on, .stakeTexth1 .out { transition: all 1s ease-out;}';
+
 CSS = CSS+'article { padding-top: '+articlePadding+'px; }';
 CSS = CSS+'article { padding-top: '+articlePadding+'px; }';
 CSS = CSS+'.tag {font-size: '+(h1px/4)+'px; bottom: '+(h1px/4)+'px; right: '+(h1px/10)+'px; left: '+(h1px/10)+'px;}';
